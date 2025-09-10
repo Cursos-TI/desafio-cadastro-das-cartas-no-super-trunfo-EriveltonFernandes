@@ -7,8 +7,8 @@ int main() {
     char codigo01[3], codigo02[3];
     char cidade01[20], cidade02[20];
     int habitante01, habitante02;
-    float area01, area02;
-    float pib01, pib02;
+    float area01, area02, densidade01, densidade02;
+    float pib01, pib02, pibpercapita01, pibpercapita02;
     int pontos01, pontos02;
 
     //Cadastro de cartas pelo usuário:
@@ -34,10 +34,13 @@ int main() {
     printf("Digite quantos pontos turísticos tem a cidade: \n");
     scanf("%d", &pontos01);
 
+    //calculo densidade e pib per capta
+    densidade01 = (float) habitante01 / area01;
+    pibpercapita01 = (float) habitante01 / pib01;
+
     // Imprimir na tela para o usuário o cadastro
 
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01);
-
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n Densidade: %.2f \n PIB per capita: %.2f \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01, densidade01, pibpercapita01);
   // Cadastro segunda carta:
 
   printf("Digite a inicial do Estado: \n");
@@ -61,9 +64,13 @@ int main() {
     printf("Digite quantos pontos turísticos tem a cidade: \n");
     scanf("%d", &pontos02);
 
+    //calculo densidade e pib per capta
+    densidade02 = (float) habitante02 / area02;
+    pibpercapita02 = (float) habitante02 / pib02;
+
     // Imprimir na tela para o usuário o cadastro
 
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02);
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n Densidade: %.2f \n PIB per capita: %.2f \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02);
 
 
 
