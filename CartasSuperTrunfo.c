@@ -7,9 +7,10 @@ int main() {
     char codigo01[3], codigo02[3];
     char cidade01[20], cidade02[20];
     int habitante01, habitante02;
-    float area01, area02, densidade01, densidade02;
+    float area01, area02, densidade01, densidade02, densidadeinvertida01, densidadeinvertida02;
     float pib01, pib02, pibpercapita01, pibpercapita02;
     int pontos01, pontos02;
+    float superpoder01, superpoder02;
 
     //Cadastro de cartas pelo usuário:
 
@@ -37,10 +38,15 @@ int main() {
     //calculo densidade e pib per capta
     densidade01 = (float) habitante01 / area01;
     pibpercapita01 = (float) habitante01 / pib01;
+    densidadeinvertida01 = (float) area01 / habitante01;
 
+    //Soma Super poderda carta 1:
+
+    superpoder01 = habitante01 + area01 + pib01 +pontos01 +densidadeinvertida01;
+    
     // Imprimir na tela para o usuário o cadastro
 
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n Densidade: %.2f \n PIB per capita: %.2f \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01, densidade01, pibpercapita01);
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01, densidade01, pibpercapita01, superpoder01);
   // Cadastro segunda carta:
 
   printf("Digite a inicial do Estado: \n");
@@ -67,10 +73,15 @@ int main() {
     //calculo densidade e pib per capta
     densidade02 = (float) habitante02 / area02;
     pibpercapita02 = (float) habitante02 / pib02;
+    densidadeinvertida01 = (float) area02 / habitante02;
+
+    //Soma Super poderda carta 2:
+
+    superpoder02 = habitante02 + area02 + pib02 +pontos02 +densidadeinvertida02;
 
     // Imprimir na tela para o usuário o cadastro
 
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f \n PIB: %.2f \n Pontos turísticos: %d \n Densidade: %.2f \n PIB per capita: %.2f \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02);
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02, superpoder02);
 
 
 
