@@ -6,11 +6,12 @@ int main() {
     char inicial01[1], inicial02[1];
     char codigo01[3], codigo02[3];
     char cidade01[20], cidade02[20];
-    int habitante01, habitante02;
-    float area01, area02, densidade01, densidade02, densidadeinvertida01, densidadeinvertida02;
-    float pib01, pib02, pibpercapita01, pibpercapita02;
-    int pontos01, pontos02;
-    float superpoder01, superpoder02;
+    int habitante01, habitante02, resultadoHabit;
+    float area01, area02, densidade01, densidade02, densidadeinvertida01, densidadeinvertida02, resultadoarea, resltadodensidade;
+    float pib01, pib02, pibpercapita01, pibpercapita02, resultadopib, resultadopibperc;
+    int pontos01, pontos02, resultadopontos;
+    float superpoder01, superpoder02, resultadopoder;
+    
 
     //Cadastro de cartas pelo usuário:
 
@@ -70,7 +71,7 @@ int main() {
     printf("Digite quantos pontos turísticos tem a cidade: \n");
     scanf("%d", &pontos02);
 
-    //calculo densidade e pib per capta
+    //calculo densidade e pib per capita
     densidade02 = (float) habitante02 / area02;
     pibpercapita02 = (float) habitante02 / pib02;
     densidadeinvertida01 = (float) area02 / habitante02;
@@ -81,8 +82,23 @@ int main() {
 
     // Imprimir na tela para o usuário o cadastro
 
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02, superpoder02);
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02, superpoder02);
 
+
+    // Comparação das cartas
+
+    //resultadoHabit = habitante01 > habitante02;
+   // resultadoarea = area01 > area02;
+    //resultadopib = pib01 > pib02;
+    //resultadopontos = pontos01 > pontos02;
+    //resltadodensidade = densidade01 > densidade02;
+    //resultadopibperc = pibpercapita01 > pibpercapita02;
+
+    printf("População: Carta 1: (%d) Carta 2: (%d) \n", habitante01 > habitante02, habitante02 > habitante01);
+
+    //printf("Comparação da carta1 com a carta 2: \n Habitantes: Carta 1: %d Carta 2: %d \n Área: Carta 1: %d Carta 2: %d \n PIB: Carta 1: %d Carta 2: %d \n Pontos turísticos: Carta 1: %d Carta 2: %d \n Densidade: Carta 1: %c Carta 2: %c \n PIB per capita: Carta 1: %c Carta 2: %c \n Super Poder: Carta 1: %c Carta 2: %c \n", resultadoHabit, resultadoHabit, resultadoarea, resultadoarea, resultadopib, resultadopib, resultadopontos, resultadopontos, resltadodensidade, resltadodensidade, resultadopibperc, resultadopibperc, resultadopoder, resultadopoder);
+
+    
 
 
 
