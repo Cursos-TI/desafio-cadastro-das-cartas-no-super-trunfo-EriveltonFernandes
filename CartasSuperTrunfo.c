@@ -36,15 +36,15 @@ int main() {
     scanf("%d", &pontos01);
 
     //calculo da densidade, desidade invertida e pib per capta:
-    densidade01 = (float) habitante01 / area01;
-    pibpercapita01 = (float) habitante01 / pib01;
-    densidadeinvertida01 = (float) area01 / habitante01;
+    densidade01 = (double) habitante01 / area01;
+    pibpercapita01 = (double) habitante01 / pib01;
+    densidadeinvertida01 = (double) area01 / habitante01;
 
     //Soma Super poderda carta 1:
     superpoder01 = habitante01 + area01 + pib01 +pontos01 +densidadeinvertida01;
     
     // Imprimir na tela para o usuário o cadastro:
-    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01, densidade01, pibpercapita01, superpoder01);
+    printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %f \n PIB per capita: %f \n Super Poder: %f \n", inicial01, codigo01, cidade01, habitante01, area01, pib01, pontos01, densidade01, pibpercapita01, superpoder01);
 
     // Cadastro segunda carta:
     printf("Digite a inicial do Estado: \n");
@@ -69,15 +69,15 @@ int main() {
     scanf("%d", &pontos02);
 
     //calculo densidade, densidade invertida e pib per capita:
-    densidade02 = (float) habitante02 / area02;
-    pibpercapita02 = (float) habitante02 / pib02;
-    densidadeinvertida01 = (float) area02 / habitante02;
+    densidade02 = (double) habitante02 / area02;
+    pibpercapita02 = (double) habitante02 / pib02;
+    densidadeinvertida01 = (double) area02 / habitante02;
 
     //Soma Super poderda carta 2:
     superpoder02 = habitante02 + area02 + pib02 +pontos02 +densidadeinvertida02;
 
     // Imprimir na tela para o usuário o cadastro:
-     printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %.4f \n PIB per capita: %.4f \n Super Poder: %f \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02, superpoder02);
+     printf("Sua carta cadastrada \n Estado: %s \n Código: %s \n Cidade: %s \n População: %d \n Área: %.4f \n PIB: %.4f \n Pontos turísticos: %d \n Densidade: %f \n PIB per capita: %f \n Super Poder: %f \n", inicial02, codigo02, cidade02, habitante02, area02, pib02, pontos02, densidade02, pibpercapita02, superpoder02);
 
 
     // Comparação das cartas:
